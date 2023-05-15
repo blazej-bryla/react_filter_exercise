@@ -5,3 +5,8 @@ export const getPeople = () => {
 
   return people;
 };
+export const getQuery = () => {
+  const query = useSelector((state) => state.people.query)
+
+  return query;
+}
