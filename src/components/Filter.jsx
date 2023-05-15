@@ -5,11 +5,17 @@ function Filter() {
   const dispatch = useDispatch();
 
   const handleChanges = (event) => {
-    dispatch(updateQuery(event.target.value))
-  }
-  return <div className="App-box">
-    <input type="text" placeholder="Search" onChange={(e) => handleChanges(e)} />
-  </div>;
+    dispatch(updateQuery(event.target.value));
+  };
+  return (
+    <div className="App-box">
+      <input
+        type="text"
+        placeholder="Search"
+        onChange={(e) => handleChanges(e)}
+      />
+    </div>
+  );
 }
 
 Filter.propTypes = {};
