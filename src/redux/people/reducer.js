@@ -29,8 +29,11 @@ export default function people(state = initialState, action) {
   switch (action.type) {
 
     // this is an example
-    case types.DO_NOTHING: {
-      return state;
+    case types.UPDATE_QUERY: {
+      return {
+        state,
+        query: action.payload
+      }
     }
 
     default:
