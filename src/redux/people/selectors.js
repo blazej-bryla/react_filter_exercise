@@ -1,6 +1,7 @@
-// this is an example selector
-const getNothing = (state) => {
-  return null;
-};
+import { useSelector } from "react-redux";
 
-// ...
+export const getPeople = () => {
+  const people = useSelector((state) => state.people.list);
+
+  return people;
+};
