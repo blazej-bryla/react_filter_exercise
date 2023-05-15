@@ -1,7 +1,6 @@
-import * as types from '../people/types';
+import * as types from "../people/types";
 
-export const doNothing = (payload) => ({
-  type: types.DO_NOTHING,
+export const updateQuery = (payload) => ({
+  type: types.UPDATE_QUERY,
   payload: payload,
 });
-
