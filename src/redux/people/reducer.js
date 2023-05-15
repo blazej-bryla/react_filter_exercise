@@ -28,10 +28,9 @@ const initialState = {
 export default function people(state = initialState, action) {
   switch (action.type) {
 
-    // this is an example
     case types.UPDATE_QUERY: {
       return {
-        state,
+        ...state,
         query: action.payload
       }
     }
