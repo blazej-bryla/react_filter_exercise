@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import { Provider } from 'react-redux';
 
-import Filter from './people/Filter';
-import People from './people/People';
+import Filter from './components/Filter';
+import People from './components/People';
 import store from './store'
 
 function App() {
