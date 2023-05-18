@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import { getPeople, getQuery } from "../redux/people/selectors";
 
-function People(props) {
+function People() {
   const people = getPeople();
   const query = getQuery();
 
@@ -18,10 +18,5 @@ function People(props) {
 
   return <div>{searchedPeople}</div>;
 }
-
-// make a research how use propTypes here properly
-People.propTypes = {
-  // ...
-};
 
 export default People;
